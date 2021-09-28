@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<div class="container h-100">
+  <div class="row">
+    <app-page-header text="Startup Premium Current Account"></app-page-header>
+    <div class="col-md-12">
+      <swiper [config]="categorySwiperConfig" class="category-swiper">
+        <ng-template [pagination]="true" 
+          swiperSlide>
+          <div class="get-started-slider">
+            <img src="https://source.unsplash.com/user/erondu/300x180">
+          </div>
+        </ng-template>
+        <ng-template [pagination]="true" 
+          swiperSlide>
+          <div class="get-started-slider">
+            <img src="https://source.unsplash.com/user/erondu/300x180">
+          </div>
+        </ng-template>
+        <ng-template [pagination]="true" 
+          swiperSlide>
+          <div class="get-started-slider">
+            <img src="https://source.unsplash.com/user/erondu/300x180">
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="instructions">
+        <div class="instruction-header">
+
+          <h3>
+            Keep the following ready with you:
+          </h3>
+        </div>
+        <div class="instruction-list">
+          <div class="instruction-one">
+            <div class="instruction-icon">
+              <img src="https://source.unsplash.com/user/erondu/30x30" alt="">
+            </div>
+            <div class="instruction-descrip">
+              Aadhaar card, PAN card
+            </div>
+          </div>
+          <div class="instruction-one">
+            <div class="instruction-icon">
+              <img src="https://source.unsplash.com/user/erondu/30x30" alt="">
+            </div>
+            <div class="instruction-descrip">
+              Signature on a blank piece of paper
+            </div>
+          </div>
+          <div class="instruction-one">
+            <div class="instruction-icon">
+              <img src="https://source.unsplash.com/user/erondu/30x30" alt="">
+            </div>
+            <div class="instruction-descrip">
+              Ensure that your camera is ready
+            </div>
+          </div>
+        </div>
+        <div class="get-started">
+          <a routerLink="/Lead-Generation" routerLinkActive="active">
+          Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

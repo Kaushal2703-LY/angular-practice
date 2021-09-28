@@ -1,0 +1,87 @@
+@media (max-width:767px) {
+  .page-header {
+    margin-bottom: 16px;
+    margin-top: 26px;
+
+    img {
+      margin-right: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+    }
+  }
+
+  .get-started-slider {
+    img {
+      width: 100%;
+    }
+  }
+
+  .instructions {
+    margin-top: 24px;
+
+    .instruction-header {
+      h3 {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    .instruction-list {
+      margin-top: 24px;
+
+      .instruction-one {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .instruction-icon {
+          img {
+            border-radius: 50%;
+            margin-right: 8px;
+          }
+        }
+
+        .instruction-descrip {
+          font-family: Roboto;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: left;
+
+        }
+      }
+    }
+
+    .get-started {
+      margin-top: 32px;
+
+      .get-started-btn {
+        width: 136px;
+        height: 40px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+
+      }
+    }
+  }
+
+}
