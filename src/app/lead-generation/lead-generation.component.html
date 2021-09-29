@@ -1,10 +1,97 @@
 <app-navbar></app-navbar>
-<div class="container">
+<div class="container main-container">
+    <app-page-header text="Information"></app-page-header>
     <div class="row">
-        <app-page-header></app-page-header>
         <div class="col-md-12">
-            <h5 class="open-account-header">Open an Account</h5>
-            <p class="open-account-p">or continue with existing application</p>
+            <h5 class="main-title">We’ll require a few documents</h5>
+            <p class="main-description">
+                Please select atleast two documents available with you to move ahead with Video KYC
+            </p>
+        </div>
+    </div>
+    <div class="row proof-doc-row">
+        <div class="col">
+            <div class="bg-wrapper mb-3">
+                <div class="title">List of Proof Documents</div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                        GST Registration Certificate
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">
+                        Shop & Establishment License issued by Municipal authorities
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">
+                        Sales tax (ST) / Central Sales Tax (CST) / Value Added Tax (VAT) / TIN Cerificate issued by
+                        Sales
+                        Tax Department
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">
+                        TAN Allotment Letter issued by NSDL in the name of firm
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox5">
+                    <label class="form-check-label" for="checkbox5">
+                        Excise Registration
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                        Certificate of Practice issued by Institute of Chartered Accountants of India
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                        Certificate of Practice issued by Institute of Cost and Works Accountants of India
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                        Certificate of Practice issued by Institute of Company Secretaries of India
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                        Certificate of Practice issued by Indian Medical Council
+                    </label>
+                </div>
+                <div class="form-check mb-0">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                        Registration License / Certificate issued by Profession Tax department
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row submit-doc-row">
+        <div class="col">
+            <div class="question">Do you wish to submit any other document?</div>
+            <div class="form-check form-check-inline mr-76">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Yes</label>
+            </div>
         </div>
     </div>
 </div>
+<app-footer></app-footer>

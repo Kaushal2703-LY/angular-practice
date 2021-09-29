@@ -1,4 +1,80 @@
 @media (max-width:767px) {
+
+  .main-container {
+    min-height: calc(100vh - 121px);
+  }
+
+  .main-title {
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #101010;
+  }
+
+  .main-description {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6F6F;
+  }
+
+  .proof-doc-row {
+    .bg-wrapper {
+      height: 314px;
+      overflow: auto;
+      padding: 16px;
+      background: #c4c4c41f;
+      border: 1px solid #1010101f;
+
+      .title {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+        color: #101010;
+        margin-bottom: 21px;
+      }
+
+      .form-check {
+        margin-bottom: 16px;
+
+        label {
+          font-family: Roboto;
+          font-size: 12px;
+          line-height: 14px;
+          color: #6F6F6F;
+        }
+      }
+    }
+  }
+
+  .submit-doc-row {
+    .question {
+      font-family: Roboto;
+      font-size: 15px;
+      line-height: 18px;
+      color: #3D3D3D;
+    }
+
+    .form-check {
+      margin: 12px 76.5px 12px 0;
+    }
+  }
+
+  .form-check-input {
+    &:checked {
+      background-color: #6F6F6F;
+      border-color: #6F6F6F;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: #6F6F6F;
+    }
+  }
+
+  // Sachin
+
   .open-account-header {
     font-size: 19px;
     font-family: Roboto;
