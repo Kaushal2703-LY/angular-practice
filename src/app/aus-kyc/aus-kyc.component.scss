@@ -1,0 +1,49 @@
+@media (max-width:767px) {
+  .kyc-section {
+    .kyc-doc {
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    .consent-modal-descrip {
+      font-family: Roboto;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .modal-body {
+      padding: 32px !important;
+
+      .consent-title {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+
+      .consent-descrip {
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        margin-bottom: 0;
+      }
+    }
+
+    .modal-footer {
+      padding: 0 32px 32px 32px !important;
+    }
+  }
+
+
+}
