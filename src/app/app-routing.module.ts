@@ -1,3 +1,4 @@
+import { AusKycComponent } from './aus-kyc/aus-kyc.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CurrentAccountComponent } from './current-account/current-account.component';
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'Lead-Generation',
     component: LeadGenerationComponent,
+  },
+  {
+    path: 'AUS-KYC',
+    component: AusKycComponent,
   },
 ];
 

@@ -45,5 +45,387 @@
     }
   }
 
+  .basic-header {
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
+  .basic-para {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+    color: #6F6F6F;
+  }
+
+  .basic-input {
+    margin-bottom: 17px;
+  }
+
+  .digit {
+    margin-top: 9px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9F9F9F;
+  }
+
+  // ---------4.5-----
+  .document-upload-label {
+    input {
+
+      display: none;
+    }
+
+    .document-upload-title {
+      margin-bottom: 0;
+      margin-left: 10px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+  }
+
+  .document-uploader {
+    color: transparent;
+    // width: 100%;
+  }
+
+  .document-uploader::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  .document-uploader::before {
+    content: '';
+    color: black;
+    display: inline-block;
+    background-image: url(/src/assets/images/upload.svg);
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 12px;
+    height: 12px;
+    outline: none;
+    white-space: nowrap;
+    --webkit-user-select: none;
+    cursor: pointer;
+
+
+  }
+
+  .document-uploader:hover::before {
+    border-color: black;
+  }
+
+  .document-uploader:active {
+    outline: 0;
+  }
+
+  .document-uploader:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  //--------------------
+  .declaration {
+    padding: 16px 24px 16px 8px;
+    background-color: #D8D8D8;
+
+    .consent {
+      font-family: Roboto;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    li {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #6F6F6F;
+    }
+
+    .consent-check {
+      //styleName: Mobile/ Heading/ 14pt - Regular - Sub heading;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+  }
+
+  .pincode-select {
+    position: absolute;
+    top: -12px;
+  }
+
+  .industry-image-header {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .doc-divider {
+    margin-top: 32px;
+    border-bottom: 2px dashed #9F9F9F;
+  }
+
+  .d-header {
+    margin-left: 6px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    margin-bottom: 0;
+
+  }
+
+  .add-document {
+    margin: 16px 0;
+  }
+
+  // -------------addresss-------------
+  .address-line {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 16px;
+
+    .address-label {
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .address-input {
+      width: 100%;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-radius: none !important;
+      border-bottom: 1px solid #E5E5E5 !important;
+    }
+
+    .address-input:focus-visible {
+      outline: none !important;
+    }
+  }
+
+  .pincode-div {
+    width: 36%;
+    padding-right: 23px;
+  }
+
+  // -------------------7.5B AUS KYC
+  .profile-header {
+    margin-left: 16px;
+  }
+
+  .profile-photo {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-uploader {
+    color: transparent;
+    // width: 100%;
+  }
+
+  .photo-uploader::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  .photo-uploader::before {
+    content: 'Upload Photo*';
+    color: black;
+    display: inline-block;
+
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    outline: none;
+    white-space: nowrap;
+    --webkit-user-select: none;
+    cursor: pointer;
+
+
+  }
+
+  .photo-uploader:hover::before {
+    border-color: black;
+  }
+
+  .photo-uploader:active {
+    outline: 0;
+  }
+
+  .photo-uploader:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  .profile-select {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: none !important;
+    border-bottom: 1px solid #E5E5E5 !important;
+  }
+
+  // activmomey---------------------------
+  .activ-money {
+    background-color: #ECECEC;
+    padding: 8px;
+
+    .activ-header {
+      //styleName: Mobile/Text/ 15pt - Regular;
+      font-family: Roboto;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .debit-header {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .dash {
+    padding: 0 15px;
+    border-bottom: 2px dashed #000;
+  }
+
+  .nominee {
+    margin-left: 5px;
+  }
+
+  .dob-label {
+    position: relative;
+    width: 100%;
+
+    .dob-header {
+      position: absolute;
+      top: 7px;
+      left: 14px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #6F6F6F;
+    }
+
+    .dob {
+      width: 100%;
+      padding: 10px 16px 0 12px;
+      height: 63px;
+      border-radius: 4px;
+      border: 1px solid #101010;
+    }
+  }
+
+  // ------Video Screen-------------------------
+  .video-screen {
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    padding: 15px;
+
+    .v-screen {
+      width: 160px;
+      height: 160px;
+      border-radius: 5px;
+    }
+
+    .v-title {
+      font-family: Roboto;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      .v-br {
+        display: inline;
+      }
+    }
+
+  }
+
+  .v-checkbox {
+    margin-top: 62px;
+  }
+
+  .assist-btn {
+    width: 152px;
+  }
 }
+
+// .video-screen {
+//   .v-title {
+//     .v-br {
+//       display: none;
+//     }
+//   }
+// }

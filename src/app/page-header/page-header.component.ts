@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PageHeaderComponent implements OnInit {
   @Input() text: any;
+  @Input() headerText: any;
   constructor() {}
 
   ngOnInit(): void {}

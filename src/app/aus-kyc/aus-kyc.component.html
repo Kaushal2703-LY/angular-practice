@@ -1,36 +1,37 @@
 <app-navbar></app-navbar>
+-------------7.1----------------------------------
 <section class="kyc-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        Favourite Color : 
-        <select class="kyc-doc" name="colors" id="color">
-          <option value="volvo">Red</option>
-          <option value="saab">Violet</option>
-          <option value="mercedes">Blue</option>
-          <option value="audi">Green</option>
-        </select>
-        Favourite Color : 
-        <select class="kyc-doc" name="colors" id="color">
-          <option value="volvo">Red</option>
-          <option value="saab">Violet</option>
-          <option value="mercedes">Blue</option>
-          <option value="audi">Green</option>
-        </select>
-        Favourite Color : 
-        <select class="kyc-doc" name="colors" id="color">
-          <option value="volvo">Red</option>
-          <option value="saab">Violet</option>
-          <option value="mercedes">Blue</option>
-          <option value="audi">Green</option>
-        </select>
+        <label for="floatingInputValue" class=" mb-3">Choose KYC Type</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+
+        </form>
+        <label for="floatingInputValue" class=" mb-3">Enter Aadhaar Number*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+          <p class="digit">It looks something like this 1234 5678 9234.</p>
+        </form>
+        <label for="floatingInputValue" class=" mb-3">Enter Aadhaar Number Again*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+          <p class="digit">You will receive 6 digit OTP on the mobile number registered with Aadhaar card. </p>
+        </form>
       </div>
       <div class="col-md-12">
-        <input type="checkbox" name="address" id="">Is the communication address same as that mentioned on Aadhaar?
+
+        <div class="form-check">
+          <label class="form-check-label" for="flexCheckDefault">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            Is the communication address same as that mentioned on Aadhaar?
+          </label>
+        </div>
       </div>
       <div class="col-md-12">
         <!-- Button trigger modal -->
-        <p class="consent-modal-descrip" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <p class="consent-modal-descrip mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Click here and accept Aadhaar Consent
         </p>
 
@@ -44,7 +45,10 @@
               <div class="modal-body">
                 <h3 class="consent-title">Aadhaar card consent</h3>
                 <p class="consent-descrip">
-                    When PAN is allotted to an entity, PAN Card too is given by the Income Tax Department. While PAN is a number, PAN Card is a physical card that has your PAN as well as name, date of birth (DoB), and photograph. Card too is given by the Income Tax Department. While PAN is a number, PAN Card is a physical card 
+                  When PAN is allotted to an entity, PAN Card too is given by the Income Tax Department. While PAN is a
+                  number, PAN Card is a physical card that has your PAN as well as name, date of birth (DoB), and
+                  photograph. Card too is given by the Income Tax Department. While PAN is a number, PAN Card is a
+                  physical card
                 </p>
               </div>
               <div class="modal-footer justify-content-center border-0">
@@ -52,6 +56,757 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+----------------------4.1 Basic Details-----------------------------
+<section class=" mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Let’s start with your basic details
+        </h4>
+        <h5 class="basic-para">
+          Your details will be safe with us
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <label class=" mb-3" for="floatingInputValue">Name*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class=" mb-3" for="floatingInputValue">Email Address*</label>
+        <form class="form-floating basic-input">
+          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class=" mb-3" for="floatingInputValue">Mobile Number*</label>
+        <form class="form-floating">
+          <input type="tel" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <p class="digit">
+          You will receive 4 digit OTP on this number
+        </p>
+      </div>
+
+      <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+--------------------4.2-------------------------------
+<section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Please fill PAN Details & Declaration
+        </h4>
+        <h5 class="basic-para">
+          We will be fetching some of the details
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <label class="mb-3" for="floatingInputValue">Pan Card Details*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+          <p class="digit">
+            It looks something like this ABCTY1234D.
+          </p>
+        </form>
+      </div>
+      <div class="col-sm-12">
+        <div class="declaration">
+          <h4 class="consent">
+            Before moving ahead, give us consent
+          </h4>
+          <p class="digit">
+            Make sure to read the below declarations
+          </p>
+          <ul class="mt-2">
+            <li class="mb-1">
+              PEP Consent
+            </li>
+            <li class="mb-1">
+              Declaration 2 text here
+            </li>
+            <li class="mb-1">
+              Declaration 3 text here
+            </li>
+          </ul>
+          <div class="dec-checkbox mt-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label consent-check" for="flexCheckDefault">
+                I have read all the above declarations, and I understand. I agree to continue and proceed.
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+------------------ignore---------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Connect with your nearby branch
+        </h4>
+        <h5 class="basic-para">
+          Enter your pincode to process further
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+          <label for="floatingInputValue">Communication Pincode*</label>
+        </form>
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Sikandarpur Bagh Branch (122410)</option>
+              <option value="pin1">One</option>
+              <option value="pin2">Two</option>
+              <option value="pin3">Three</option>
+            </select>
+            <label for="floatingSelect">Branch Pincode*</label>
+          </div>
+        </form>
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Sole Proprietor</option>
+              <option value="constitution1">One</option>
+              <option value="constitution2">Two</option>
+              <option value="constitution3">Three</option>
+            </select>
+            <label for="floatingSelect">Constitution*</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+------------------4.4---------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Connect with your nearby branch
+        </h4>
+        <h5 class="basic-para">
+          Enter your pincode to process further
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <label class=" mb-3" for="floatingInputValue">Communication Pincode*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Branch Pincode*</label>
+          </div>
+        </form>
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Constitution*</label>
+          </div>
+        </form>
+        <div class="dec-checkbox mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label consent-check" for="flexCheckDefault">
+              I have read all the terms & conditions from Kotak and I agree to proceed.
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+--------------with GSTIN-----------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Here are some details about you
+        </h4>
+        <h5 class="basic-para">
+          Basis the information provided earlier
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <label class=" mb-3" for="floatingInputValue">Proprietor Name*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class=" mb-3" for="floatingInputValue">GSTIN Number*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <div class="document-upload-label">
+
+          <label class="mb-2 d-flex " for="industryDocument">
+            <img src="assets/images/upload.svg" alt="">
+            <h5 class="document-upload-title">Upload Document*</h5>
+          </label>
+          <input type="file" name="industryDocument" id="industryDocument">
+        </div>
+        <label for="DOB" class="dob-label mt-3">
+          <h5 class="dob-header">
+  
+            Entity DOI*
+          </h5>
+          <input type="date" placeholder="sachin" class="basic-input dob" name="DOB" id="">
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+---------------------------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Nature of Business*</label>
+          </div>
+        </form>
+        <label class=" mb-3"  for="floatingSelect">Nature of Industry*</label>
+        <select class="form-select" id="floatingSelect" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<label class="mt-2 mb-3" for="floatingInputValue">Turnover*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <h5 class="industry-image-header">
+          Industry Image
+        </h5>
+        <div class="document-upload-label">
+
+          <label class="mb-2 d-flex " for="industryDocument">
+            <img src="assets/images/upload.svg" alt="">
+            <h5 class="document-upload-title">Upload Document*</h5>
+          </label>
+          <input type="file" name="industryDocument" id="industryDocument">
+        </div>
+        <a href="#" class="mt-2">
+          What is an industry image?
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+---------------------------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Nature of Industry*</label>
+          </div>
+        </form>
+        <label class="mb-3"  for="floatingInputValue">Document Number*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class="mb-3" for="floatingInputValue">Name of Organisation*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class="mb-3" for="floatingInputValue">Registered Address*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+      </div>
+      <div class="doc-divider"></div>
+      <div class="add-document">
+        <div (click)="addField.previous = !addField.previous" class="d-flex align-items-center mt-2">
+
+          <img src="assets/images/+.svg" alt="Plus-Icon">
+          <h4 class="d-header">
+            Add another document
+          </h4>
+        </div>
+        <p class="mt-1 digit">
+          Adding another document can help the user in a way when the previous document goes invalid. Note that it is
+          not mandatory.
+        </p>
+      </div>
+      <div *ngIf="addField.previous" class="col-sm-12 add-field">
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Nature of Industry*</label>
+          </div>
+        </form>
+        <label class="mb-3" for="floatingInputValue">Document Number*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class="mb-3" for="floatingInputValue">Name of Organisation*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class="mb-3" for="floatingInputValue">Registered Address*</label>
+        <form class="form-floating basic-input ">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+---------------------------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Which address proof would you want to proceed with?
+        </h4>
+      </div>
+      <div class="col-sm-12">
+        <div class="dec-checkbox mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label consent-check" for="flexCheckDefault">
+              C/1-120 Phase-4 SFS Area, Sikandarpur Bagh, Thane, Maharasthra, 122410
+            </label>
+          </div>
+        </div>
+        <div class="dec-checkbox mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label consent-check" for="flexCheckDefault">
+              H-1 Sant Paraman Marg, Sector 48, Near Mumbai Central, 22566
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+---------------------------------------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Please review your Address
+        </h4>
+        <h5 class="basic-para">
+          Your address sequence is as mentioned below
+        </h5>
+      </div>
+      <div class="col-sm-12">
+        <div class="address-line">
+          <label class="address-label">
+            Address line 1
+          </label>
+          <input class="address-input" type="text" name="address-line1" id="" placeholder="H -1 Sant Paraman Marg">
+          <label class="address-label mt-3">
+            Address line 2
+          </label>
+          <input class="address-input" type="text" name="address-line2" id="" placeholder="Sector 48">
+          <label class="address-label mt-3">
+            Address line 3
+          </label>
+          <input class="address-input" type="text" name="address-line3" id="" placeholder="Near Mumbai Central">
+          <div class="col-sm-3 mt-3 d-flex">
+            <div class="pincode-div">
+              <label class="address-label">
+                Pincode
+              </label>
+              <input type="number" class="address-input" name="pincode" id="" placeholder="322566">
+            </div>
+            <div>
+              <label class="address-label">
+                City
+              </label>
+              <input type="text" class="address-input" name="city" placeholder="Mirzapur and Vindhyachal" id="">
+            </div>
+          </div>
+          <label class="address-label mt-3">
+            State
+          </label>
+          <input class="address-input" type="text" name="State" id="" placeholder="Uttar Pradesh">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+---------------------7.5B AUS KYC------------------
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Additional details to be captured
+        </h4>
+        <h5 class="basic-para">
+          Please provide us few of below details
+        </h5>
+      </div>
+    </div>
+    <div class="col-sm-12 d-flex">
+      <!-- <img src="https://source.unsplash.com/user/erondu/48x48" height="48" width="48" alt="" class="profile-photo"> -->
+      <img [src]="urllink" class="profile-photo" alt="">
+      <div class="profile-header">
+        <h4 class="basic-header w-100">
+          <input type="file" name="profile-photo" class="photo-uploader w-100" accept=".jpg,.png"
+            (change)="selectedFiles($event)" id="">
+        </h4>
+        <h5 class="basic-para">
+          Accepted files - JPG, PNG (Upto 5MB)
+        </h5>
+      </div>
+    </div>
+    <!-- <img [src]="urllink" class="profile-photo"  alt=""> -->
+    <div class="col-sm-12 d-flex justify-content-evenly">
+      <form class="form-floating">
+
+        <div class="form-floating">
+          <select class="form-select profile-select" id="floatingSelect" aria-label="Floating label select example">
+
+            <option selected value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Transgender</option>
+          </select>
+          <label for="floatingSelect">Gender</label>
+        </div>
+      </form>
+      <form class="form-floating">
+
+        <div class="form-floating">
+          <select class="form-select profile-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected value="1">Married</option>
+            <option value="2">UnMarried</option>
+          </select>
+          <label for="floatingSelect">Marital Status</label>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-12">
+      <label class="mb-3" for="floatingInputValue">Father’s Name</label>
+      <form class="form-floating basic-input">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+      </form>
+      <label class="mb-3" for="floatingInputValue">Spouse Name</label>
+      <form class="form-floating basic-input">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+      </form>
+      <label class="mb-3" for="floatingInputValue">Educational Qualification*</label>
+      <form class="form-floating basic-input">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+      </form>
+      <label class="mb-3" for="floatingInputValue">Maiden*</label>
+      <form class="form-floating basic-input">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+      </form>
+      <label class="mb-3" for="floatingInputValue">Occupation*</label>
+      <form class="form-floating basic-input">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+      </form>
+      <form class="form-floating">
+
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+            <option selected value="1">Less than 25 </option>
+            <option value="2">Less than 50 </option>
+            <option value="3">Less than 1lakh</option>
+            <option value="4">More than 1lakh</option>
+            <option value="5">More than 10lakh</option>
+          </select>
+          <label for="floatingSelect">Annual Income*</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+---------------------mandate---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-floating basic-input">
+          <input type="number" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+          <label for="floatingInputValue">Mandate Mobile Number*</label>
+          <p class="digit">
+            You will receive 4 digit OTP on this number
+          </p>
+        </form>
+        <label class="mb-3" for="floatingInputValue">Mandate Email Address*</label>
+        <form class="form-floating basic-input">
+          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+        <label class="mb-3" for="floatingInputValue">Mandate PAN Details*</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+-------------7.9 AUS Product Selection-----
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="activ-money">
+          <h5 class="activ-header">
+            ActivMoney
+          </h5>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="mt-3">
+          <h5 class="debit-header">
+            Debit card
+          </h5>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="no">
+            <label class="form-check-label" for="inlineRadio1">No</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="yes">
+            <label class="form-check-label" for="inlineRadio2">Yes</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+
+        <div class="mt-3 dash"></div>
+      </div>
+      <div class="col-sm-12">
+        <div class=" mt-4 d-flex align-items-center">
+          <h5 class="digit">
+            Do you want to register the Nominee?
+          </h5>
+          <div class="form-check form-check-inline nominee">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="nomineeNo">
+            <label class="form-check-label" for="inlineRadio1">No</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="nomineeYes">
+            <label class="form-check-label" for="inlineRadio2">Yes</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+----------------------Nomineee-----------
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="input-group ">
+          <span class="input-group-text" id="basic-addon1">
+
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+              <option selected value="Mr">Mr </option>
+              <option value="Mrs">Mrs </option>
+              <option value="Miss">Miss</option>
+
+            </select>
+
+          </span>
+          <input type="text" class="form-control" placeholder="Pankaj Rajput" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="div col-sm-12">
+
+        <form class="form-floating basic-input">
+
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+              <option selected value="1">Mother </option>
+              <option value="2">Father</option>
+              <option value="3">Brother</option>
+              <option value="4">Sister</option>
+              <option value="5">Husband</option>
+            </select>
+            <label for="floatingSelect">Relationship with Guardian</label>
+          </div>
+        </form>
+        <label for="DOB" class="dob-label">
+          <h5 class="dob-header">
+
+            Guardian Date of Birth
+          </h5>
+          <input type="date" placeholder="sachin" class="basic-input dob" name="DOB" id="">
+        </label>
+        <label class="mb-3" for="floatingInputValue">Guardian Address</label>
+        <form class="form-floating basic-input">
+          <input type="text" class="form-control" id="floatingInputValue"
+            placeholder="H-1 Sant Paraman Marg, Sector 48, Near Mumbai Central, 22566">
+        </form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Guardian address is same as AUS
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+----------------video screen----------
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="video-screen text-center">
+          <img src="https://source.unsplash.com/user/erondu" class="v-screen mt-4" alt="">
+          <h1 class="v-title mt-3">
+            Congrats! <br class="v-br">
+            You are almost there for Video KYC
+          </h1>
+
+          <div class="form-check v-checkbox">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label text-start" for="flexCheckChecked">
+              I have read all the terms & conditions from Kotak and I agree FATCHA Declaration too
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 d-flex justify-content-between mt-4">
+        <button class="assist-btn">
+          Proceed to <br>
+          Assisted Journey
+        </button>
+        <button class="assist-btn">
+          Proceed to <br>
+          Video KYC
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+----mandate-----
+<section class=" mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Verify Mandate Details
+        </h4>
+        <h5 class="basic-para">
+          Please provide us your few of below details
+        </h5>
+      </div>
+      <div class="col-md-12">
+        <label class="mb-3" for="mandate">Mobile Number*</label>
+        <form class="form-floating basic-input">
+          <input type="number" class="form-control" id="mandate" placeholder="name@example.com" value="">
+          <p class="digit">You will receive 4 digit OTP on this number</p>
+        </form>
+        <label class="mb-3" for="mandatepan">PAN Details*</label>
+        <form class="form-floating basic-input">
+          <input type="number" class="form-control" id="mandatepan" placeholder="4675 1324 9854">
+          <p class="digit">It looks something like this ABCTY1234D.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+---6.7C-------------------------
+<section class=" mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="basic-header">
+          Let us know about your ID
+        </h4>
+        <h5 class="basic-para">
+          Basis the information provided earlier
+        </h5>
+      </div>
+      <div class="col-md-12">
+        <label class="mb-3" for="AdharNum">Enter Aadhaar Number or Virtual ID</label>
+        <form class="form-floating basic-input">
+          <input type="number" class="form-control" id="AdharNum" placeholder="name@example.com" value="">
+          <p class="digit">How does Virtual ID looks like?</p>
+        </form>
+        <label class="mb-3" for="AdharNum1">Enter Aadhaar Number or Virtual ID Again</label>
+        <form class="form-floating basic-input">
+          <input type="number" class="form-control" id="AdharNum1" placeholder="4675 1324 9854">
+        </form>
+        <div class="form-check mt-2">
+          <label class="form-check-label" for="Adhar">
+          <input class="form-check-input" type="checkbox" value="" id="Adhar">
+            I have read and agree to proceed with <b>Aadhaar Card Consent.</b>
+          </label>
         </div>
       </div>
     </div>

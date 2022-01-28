@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CurrentAccountComponent } from './current-account/current-account.component';
-import { SwiperModule } from 'swiper/angular';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import Swiper, { Navigation, Pagination } from 'swiper';
@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeadGenerationComponent } from './lead-generation/lead-generation.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { AusKycComponent } from './aus-kyc/aus-kyc.component';
 Swiper.use([Navigation, Pagination]);
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -26,6 +27,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FooterComponent,
     LeadGenerationComponent,
     PageHeaderComponent,
+    AusKycComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule, SwiperModule],
   providers: [
